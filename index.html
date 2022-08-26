@@ -110,15 +110,32 @@
             <li class="nav-item"><a class="nav-link" href="#chapter_newscene">Add New Scene</a></li>
           </ul>
         </li>
-		<li class="nav-item"><a class="nav-link" href="#tab_template">More Templates</a></li>
-		<li class="nav-item"><a class="nav-link" href="#tab_changelog">Changelog</a>
-			<ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#v1-3-0a">v1.3.0a</a></li>
-        <li class="nav-item"><a class="nav-link" href="#v1-2-0a">v1.2.0a</a></li>
-        <li class="nav-item"><a class="nav-link" href="#v1-1-0a">v1.1.0a</a></li>
-        <li class="nav-item"><a class="nav-link" href="#v1-0-0a">v1.0.0a</a></li>
-      </ul>
-		</li>
+        <li class="nav-item"><a class="nav-link" href="#tab_attribute">Attribute</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#attribute_line">Line Attribute</a></li>
+            <li class="nav-item"><a class="nav-link" href="#attribute_show_if">Show If Attribute</a></li>
+            <li class="nav-item"><a class="nav-link" href="#attribute_suffix">Suffix Attribute</a></li></ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#tab_weapon">Weapons</a>
+          <!--<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#weapon_convert">Convert Weapon to New System</a></li>
+            <li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
+            <li class="nav-item"><a class="nav-link" href="#weapon_melle">Melle Weapon</a></li>
+            <li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>
+          </ul>-->
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#tab_tutorial">Video Tutorial</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab_template">More Templates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tab_changelog">Changelog</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-4-0a">v1.4.0a</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-3-0b">v1.3.0b</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-3-0a">v1.3.0a</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-2-0a">v1.2.0a</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-1-0a">v1.1.0a</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v1-0-0a">v1.0.0a</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     
@@ -137,21 +154,21 @@
 		<div class="row">
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong>Version:</strong> 1.3.0a</li>
+					<li><strong>Version:</strong> 1.4.0a</li>
 					<li><strong>Author:</strong> <a href="https://assetstore.unity.com/publishers/63085" target="_blank">Tiny Slime Studio</a></li>
         </ul>
 			</div>
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
 					<li><strong class="font-weight-700">Created:</strong> 22 April, 2022</li>
-					<li><strong>Update:</strong> 25 Jul, 2022</li>
+					<li><strong>Update:</strong> 26 August, 2022</li>
 				</ul>
 			</div>
 
       <div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-          <li><strong>File Size:</strong> 34.1 MB</li>
-          <li><strong>Unity Versions:</strong> 2020.3.36+</li>
+          <li><strong>File Size:</strong> 60.1 MB</li>
+          <li><strong>Unity Versions:</strong> 2020.3.30+</li>
 				</ul>
 			</div>
 		</div>
@@ -394,6 +411,151 @@
         </section>
 		
 		<hr class="divider">
+
+    
+    		<!-- Weapon 
+		============================ -->
+      <section id="tab_attribute">
+          <h2>Custom Attribute</h2>
+          <p>You can improve your inspector with custom attributes like Line Attribute and Show If Atribute</p>
+        </section>
+		
+        <hr class="divider">
+
+
+    		<!-- Weapon 
+		============================ -->
+    <section id="attribute_line">
+      <h2>Line Attribute</h2>
+      <p></p>
+      <p><a class="popup-img" href="assets/images/attribute/line_attribute.png"><img class="img-fluid border" src="assets/images/attribute/line_attribute.png" alt=""></a></p>
+      <h4>Sample Code</h4>
+      <pre style="margin: 0;">
+        <span class="hljs"><comment>// Line without Text</comment>
+[<green-txt>Line</green-txt>()] <red-txt>public int</red-txt> <green-txt>Count1</green-txt>;
+
+<comment>// Green Line without Text</comment>
+[<green-txt>Line</green-txt>(<green-txt>VirtualColor</green-txt><red-txt>.</red-txt>Green)] <red-txt>public int</red-txt> <green-txt>Count2</green-txt>;
+
+<comment>// Line with Text</comment>
+[<green-txt>Line</green-txt>(<yellow-txt>"Line Text"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>Count3</green-txt>;
+
+<comment>// Line with Multi-Line</comment>
+[<green-txt>Line</green-txt>(<yellow-txt>"Line Text"</yellow-txt>, <yellow-txt>"Line Text"</yellow-txt>, <yellow-txt>"Line Text"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>Count4</green-txt>;
+
+<comment>// Purple Line with Text</comment>
+[<green-txt>Line</green-txt>(<green-txt>VirtualColor</green-txt><red-txt>.</red-txt>Purple, <yellow-txt>"Line Text"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>Count5</green-txt>;
+
+<comment>// Red Line with Multi-Line</comment>
+[<green-txt>Line</green-txt>(<green-txt>VirtualColor</green-txt><red-txt>.</red-txt>Red, <yellow-txt>"Line Text"</yellow-txt>, <yellow-txt>"Line Text"</yellow-txt>, <yellow-txt>"Line Text"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>Count6</green-txt>;
+</span>
+      </pre>
+      
+    </section>
+
+    <hr class="divider">
+
+    		<!-- Weapon 
+		============================ -->
+    <section id="attribute_show_if">
+      <h2>Show If Attribute</h2>
+      <p></p>
+      <p><a class="popup-img" href="assets/images/attribute/show_if_attribute.png"><img class="img-fluid border" src="assets/images/attribute/show_if_attribute.png" alt=""></a></p>
+      <h4>Sample Code</h4>
+      <pre style="margin: 0;">
+        <span class="hljs"><comment>// Example Enum</comment>
+<red-txt>public</red-txt> <green-txt>CustomEnum Enums</green-txt>;
+
+<comment>// Example Bool</comment>
+<red-txt>public bool</red-txt> <green-txt>enable</green-txt>;
+
+<comment>// Show If Bool</comment>
+[<green-txt>ShowIf</green-txt>(<yellow-txt>"enable"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>enableWhenBool</green-txt>;
+
+<comment>// Show if enums == CustomEnum.B</comment>
+[<green-txt>ShowIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, <blue-txt>1</blue-txt>)] <red-txt>public int</red-txt> <green-txt>enableWhenEnumB</green-txt>;
+
+<comment>// Show if enums == CustomEnum.C</comment>
+[<green-txt>ShowIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, (<red-txt>int</red-txt>)<green-txt>CustomEnum</green-txt><red-txt>.</red-txt>C)] <red-txt>public int</red-txt> <green-txt>enableWhenEnumC</green-txt>;
+
+<comment>// Enable if enums == CustomEnum.D</comment>
+[<green-txt>ShowIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, (<red-txt>int</red-txt>)<green-txt>CustomEnum</green-txt><red-txt>.</red-txt>D, <red-txt>false</red-txt>)] <red-txt>public int</red-txt> <green-txt>enableWhenEnumD</green-txt>;
+
+<comment>// Example Enum Code</comment>
+<red-txt>public enum</red-txt> <green-txt>CustomEnum</green-txt>
+{
+    A <red-txt>=</red-txt> <blue-txt>0</blue-txt>,
+    B <red-txt>=</red-txt> <blue-txt>1</blue-txt>,
+    C <red-txt>=</red-txt> <blue-txt>2</blue-txt>,
+    D <red-txt>=</red-txt> <blue-txt>4</blue-txt>
+}
+</span>
+      </pre>
+    </section>
+    		
+    <hr class="divider">
+
+    
+    		<!-- Weapon 
+		============================ -->
+    <section id="attribute_suffix">
+      <h2>Suffix Attribute</h2>
+      <p></p>
+      <p><a class="popup-img" href="assets/images/attribute/Suffix_attribute.png"><img class="img-fluid border" src="assets/images/attribute/Suffix_attribute.png" alt=""></a></p>
+      <h4>Sample Code</h4>
+      <pre style="margin: 0;">
+        <span class="hljs"><comment>// Suffix Ints to Int value</comment>
+[<green-txt>Suffix</green-txt>(<yellow-txt>"Ints"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>suffixInt</green-txt>;
+
+<comment>// Suffix Floats to Float value</comment>
+[<green-txt>Suffix</green-txt>(<yellow-txt>"Floats"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>suffixFloat</green-txt>;
+
+<comment>// Suffix Strings to String value</comment>
+[<green-txt>Suffix</green-txt>(<yellow-txt>"Strings"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>suffixString</green-txt>;
+</span>
+      </pre>
+    </section>
+    		
+    <hr class="divider">
+
+    		<!-- Weapon 
+		============================ -->
+      <section id="tab_weapon">
+          <h2>Weapons</h2>
+          <p>At this Moment Hellish battle has 3 types of Weapons: Ranged Weapon, Melle Weapon and Throwable Weapon</p>
+        </section>
+		
+        <hr class="divider">
+    		
+		<!-- Video Tutorial
+		============================ -->
+        <section id="tab_tutorial">
+          <h2>Video Tutorials</h2>
+		  
+		  <div class="row">
+        <div class="col-4 my-3 text-center">
+          <a target="_blank" href="https://youtu.be/RBc4tkIjYmE"><img class="img-fluid border" src="assets/images/tutorials/ChangeEnemyTutorial.png" alt="">
+            <h6 class="pt-2">Change Enemy Animation<br></h6>
+            <a class="btn btn-primary" target="_blank" href="https://youtu.be/RBc4tkIjYmE"><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a>
+          </a>
+        </div>
+        <div class="col-4 my-3 text-center">
+          <a target="_blank" href="https://youtu.be/RkGpeNXYHgc"><img class="img-fluid border" src="assets/images/tutorials/ConvertWeapon.png" alt="">
+            <h6 class="pt-2">Convert Weapon to New System<br></h6>
+            <a class="btn btn-primary" target="_blank" href="https://youtu.be/RkGpeNXYHgc"><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a>
+          </a>
+        </div>
+        <div class="col-4 my-3 text-center">
+          <a target="_blank" href="https://youtu.be/-FB5Zmv00fc"><img class="img-fluid border" src="assets/images/tutorials/CreateNewWeapon.png" alt="">
+            <h6 class="pt-2">Create New Weapon<br></h6>
+            <a class="btn btn-primary" target="_blank" href="https://youtu.be/-FB5Zmv00fc"><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a>
+          </a>
+        </div>
+		  </div>
+		     
+    </section>
+		
+		<hr class="divider">
 		
 		<!-- More Templates
 		============================ -->
@@ -403,7 +565,7 @@
 		  <div class="row">
 		  <div class="col-4 my-3 text-center">
 			<a target="_blank" href="https://assetstore.unity.com/packages/templates/systems/draw-the-line-game-template-215203"><img class="img-fluid border" src="assets/images/draw-the-line.png" alt="">
-			<h6 class="pt-2">Draw The Line - Game Template</h6>
+      <h6 class="pt-2">Draw The Line - Game Template<br><span class="badge badge-green">4,99$</span></h6>
 			</a>
 		  </div>
 		  </div>
@@ -419,6 +581,33 @@
           <h2>Changelog</h2>
           <p class="text-4">See what has been added, changed in updates. </p>
 		      <p class="alert alert-info mb-5">Do you want to check what will be in the next update? check it out for the always up-to-date roadmap: <a target="_blank" href="https://trello.com/b/LLsG1tUJ/hellish-battle-25d-retro-fps-game-template">Trello</a></p>
+          
+		  <h3 id="v1-4-0a">Version 1.4.0a <small class="text-muted">27 August, 2022</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-yellow">Rework</span> Rebuild Weapon System <code>Universal Script to All Range Weapons</code></li>
+            <li><span class="badge badge-green">Added</span> New Fire Mode: <code>Burst</code></li>
+            <li><span class="badge badge-green">Added</span> Ammo Cost pre Shot to <code>Range Weapon</code></li> 
+            <li><span class="badge badge-green">Added</span> One Shot Multi Bullet "Shotgun Effect" to <code>Range Weapon</code></li>
+            <li><span class="badge badge-green">Added</span> Weapon Spread</li>
+            <li><span class="badge badge-green">Added</span> Weapon Name</li>
+            <li><span class="badge badge-green">Added</span> Melle Weapon: <code>Normal Attack</code>, <code>Alternative Attack</code>, <code>Block</code></li>
+            <li><span class="badge badge-green">Added</span> Throwable Weapon: <code>Normal Throw</code>, <code>Alternative Throw</code></li>
+            <li><span class="badge badge-green">Added</span> Custom Editor Attribute: <code>Line Attribute</code>, <code>Show If "Bool or Enum" Attribute</code></li>
+            <li><span class="badge badge-orange">Tutorial</span> Save System: <code>Vector2</code>, <code>Vector3</code>, <code>Vector4</code>, <code>Color</code>, <code>Quanterion</code>, <code>Custom Class: Trophy</code></li>
+          </ul>
+
+      		  
+		  <hr class="divider">
+
+          
+		  <h3 id="v1-3-0b">Version 1.3.0b <small class="text-muted">04 August, 2022</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-red">Fix</span> Display 1 no camera rendering</li>
+          </ul>
+
+      		  
+		  <hr class="divider">
+
           
 		  <h3 id="v1-3-0a">Version 1.3.0a <small class="text-muted">27 July, 2022</small></h3>
           <ul class="changelog">
