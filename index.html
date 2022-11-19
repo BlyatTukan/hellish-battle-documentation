@@ -61,7 +61,7 @@
 		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav">
             <li><a target="_blank" href="https://assetstore.unity.com/publishers/63085">Assets Store</a></li>
-            <li><a target="_blank" href="https://blyattukan.github.io/TinySlimeStudio/">Tiny SLime Studio Website</a></li>
+            <li><a target="_blank" href="https://blyattukan.github.io/TinySlimeStudio/">Tiny Slime Studio Website</a></li>
           </ul>
         </div>
         <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
@@ -110,24 +110,33 @@
             <li class="nav-item"><a class="nav-link" href="#chapter_newscene">Add New Scene</a></li>
           </ul>
         </li>
+        <li class="nav-item"><a class="nav-link" href="#tab_gamemode">Gamemodes</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#chapter_deadlyrace">Deadly Race Mode</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chapter_wave">Wave Mode</a></li>
+            <li class="nav-item"><a class="nav-link" href="#chapter_arcade">Arcade Mode</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#tab_attribute">Attribute</a>
           <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#attribute_line">Line Attribute</a></li>
             <li class="nav-item"><a class="nav-link" href="#attribute_show_if">Show If Attribute</a></li>
-            <li class="nav-item"><a class="nav-link" href="#attribute_suffix">Suffix Attribute</a></li></ul>
+            <li class="nav-item"><a class="nav-link" href="#attribute_suffix">Suffix Attribute</a></li>
+            <li class="nav-item"><a class="nav-link" href="#attribute_helpBox">Help Box Attribute</a></li></ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#tab_weapon">Weapons</a>
-          <!--<ul class="nav flex-column">
+          <ul class="nav flex-column">
             <li class="nav-item"><a class="nav-link" href="#weapon_convert">Convert Weapon to New System</a></li>
-            <li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
+            <!--<li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
             <li class="nav-item"><a class="nav-link" href="#weapon_melle">Melle Weapon</a></li>
-            <li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>
-          </ul>-->
+            <li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>-->
+          </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#tab_tutorial">Video Tutorial</a></li>
         <li class="nav-item"><a class="nav-link" href="#tab_template">More Templates</a></li>
         <li class="nav-item"><a class="nav-link" href="#tab_changelog">Changelog</a>
           <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1-6-0a">v1.6.0a</a></li>
             <li class="nav-item"><a class="nav-link" href="#v1-5-0a">v1.5.0a</a></li>
             <li class="nav-item"><a class="nav-link" href="#v1-4-0c">v1.4.0c</a></li>
             <li class="nav-item"><a class="nav-link" href="#v1-4-0b">v1.4.0b</a></li>
@@ -157,20 +166,20 @@
 		<div class="row">
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-					<li><strong>Version:</strong> 1.5.0a</li>
+					<li><strong>Version:</strong> 1.6.0a</li>
 					<li><strong>Author:</strong> <a href="https://assetstore.unity.com/publishers/63085" target="_blank">Tiny Slime Studio</a></li>
         </ul>
 			</div>
 			<div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
 					<li><strong class="font-weight-700">Created:</strong> 22 April, 2022</li>
-					<li><strong>Update:</strong> 05 October, 2022</li>
+					<li><strong>Update:</strong> 21 November, 2022</li>
 				</ul>
 			</div>
 
       <div class="col-sm-6 col-lg-4">
 				<ul class="list-unstyled">
-          <li><strong>File Size:</strong> 68.9 MB</li>
+          <li><strong>File Size:</strong> 76.8 MB</li>
           <li><strong>Unity Versions:</strong> 2020.3.30+</li>
 				</ul>
 			</div>
@@ -415,12 +424,52 @@
 		
 		<hr class="divider">
 
+    		<!-- Layout
+		============================ -->
+    <section id="tab_gamemode">
+      <h2>Gamemodes</h2>
+      <p>To change the Game Mode you need to enter the Level Manager in the Scene, find Gamemode Type and change to the selected Mode</p>
+    </section>
+    
+    <hr class="divider">
+
+        		<!-- Layout
+		============================ -->
+    <section id="chapter_deadlyrace">
+      <h2>Deadly Race Mode</h2>
+      
+      <p>Survive as long as possible despite the enemies appearing in the area</p>
+    </section>
+    
+    <hr class="divider">
+
+        		<!-- Layout
+		============================ -->
+    <section id="chapter_wave">
+      <h2>Wave Mode</h2>
+      
+      <p>Survive as many incoming waves of enemies as possible</p>
+    </section>
+    
+    <hr class="divider">
+
+        		<!-- Layout
+		============================ -->
+    <section id="chapter_arcade">
+      <h2>Arcade Mode</h2>
+      
+      <p>It works like Classic Mode but the most important thing is to collect points</p>
+    </section>
+    
+    <hr class="divider">
+
     
     		<!-- Weapon 
 		============================ -->
       <section id="tab_attribute">
           <h2>Custom Attribute</h2>
-          <p>You can improve your inspector with custom attributes like Line Attribute and Show If Atribute</p>
+          <p><a class="popup-img" href="assets/images/attribute/Attribute_Showcase.png"><img class="img-fluid border" src="assets/images/attribute/Attribute_Showcase.png" alt=""></a></p>
+      <p>You can improve your inspector with custom attributes like Line Attribute and Show If Atribute</p>
         </section>
 		
         <hr class="divider">
@@ -431,7 +480,6 @@
     <section id="attribute_line">
       <h2>Line Attribute</h2>
       <p></p>
-      <p><a class="popup-img" href="assets/images/attribute/line_attribute.png"><img class="img-fluid border" src="assets/images/attribute/line_attribute.png" alt=""></a></p>
       <h4>Sample Code</h4>
       <pre style="margin: 0;">
         <span class="hljs"><comment>// Line without Text</comment>
@@ -463,7 +511,6 @@
     <section id="attribute_show_if">
       <h2>Show If Attribute</h2>
       <p></p>
-      <p><a class="popup-img" href="assets/images/attribute/show_if_attribute.png"><img class="img-fluid border" src="assets/images/attribute/show_if_attribute.png" alt=""></a></p>
       <h4>Sample Code</h4>
       <pre style="margin: 0;">
         <span class="hljs"><comment>// Example Enum</comment>
@@ -504,7 +551,6 @@
     <section id="attribute_suffix">
       <h2>Suffix Attribute</h2>
       <p></p>
-      <p><a class="popup-img" href="assets/images/attribute/Suffix_attribute.png"><img class="img-fluid border" src="assets/images/attribute/Suffix_attribute.png" alt=""></a></p>
       <h4>Sample Code</h4>
       <pre style="margin: 0;">
         <span class="hljs"><comment>// Suffix Ints to Int value</comment>
@@ -521,6 +567,31 @@
     		
     <hr class="divider">
 
+    
+    		<!-- Weapon 
+		============================ -->
+    <section id="attribute_helpBox">
+      <h2>Help Box Attribute</h2>
+      <p></p>
+      <h4>Sample Code</h4>
+      <pre style="margin: 0;">
+        <span class="hljs"><comment>// Info Help Box Structure</comment>
+[<green-txt>HelpBox</green-txt>(<yellow-txt>"Info Text"</yellow-txt>, <green-txt>UnityEditor</green-txt><red-txt>.</red-txt><green-txt>UnityEditor</green-txt><red-txt>.</red-txt>Info)] <red-txt>public int</red-txt> <green-txt>HelpBox_Info</green-txt>;
+
+<comment>// Warning Help Box Structure</comment>
+[<green-txt>HelpBox</green-txt>(<yellow-txt>"Warning Text"</yellow-txt>, <green-txt>UnityEditor</green-txt><red-txt>.</red-txt><green-txt>UnityEditor</green-txt><red-txt>.</red-txt>Warning)] <red-txt>public int</red-txt> <green-txt>HelpBox_Warning</green-txt>;
+
+<comment>// Error Help Box Structure</comment>
+[<green-txt>HelpBox</green-txt>(<yellow-txt>"Error Text"</yellow-txt>, <green-txt>UnityEditor</green-txt><red-txt>.</red-txt><green-txt>UnityEditor</green-txt><red-txt>.</red-txt>Error)] <red-txt>public int</red-txt> <green-txt>HelpBox_Error</green-txt>;
+
+<comment>// Multiline Help Box Structure</comment>
+[<green-txt>HelpBox</green-txt>(<yellow-txt>"Help Box\nWithout\nIcon"</yellow-txt>, <green-txt>UnityEditor</green-txt><red-txt>.</red-txt><green-txt>UnityEditor</green-txt><red-txt>.</red-txt>.None)] <red-txt>public int</red-txt> <green-txt>HelpBox_None</green-txt>;
+</span>
+      </pre>
+    </section>
+    		
+    <hr class="divider">
+
     		<!-- Weapon 
 		============================ -->
       <section id="tab_weapon">
@@ -529,6 +600,16 @@
         </section>
 		
         <hr class="divider">
+
+            		<!-- Weapon 
+		============================ -->
+      <section id="weapon_convert">
+        <h2>Convert to New System</h2>
+        <p>Only when upgrading from 1.3.0 and earlier</p>
+        <iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://youtube.com/embed/RkGpeNXYHgc"> </iframe>
+      </section>
+  
+      <hr class="divider">
     		
 		<!-- Video Tutorial
 		============================ -->
@@ -585,20 +666,38 @@
           <p class="text-4">See what has been added, changed in updates. </p>
 		      <p class="alert alert-info mb-5">Do you want to check what will be in the next update? check it out for the always up-to-date roadmap: <a target="_blank" href="https://trello.com/b/LLsG1tUJ/hellish-battle-25d-retro-fps-game-template">Trello</a></p>
     
-          <h3 id="v1-5-0a">Version 1.5.0a <small class="text-muted">05 October, 2022</small></h3>
+          <h3 id="v1-6-0a">Version 1.6.0a <small class="text-muted">21 November, 2022</small></h3>
           <ul class="changelog">
-            <li><span class="badge badge-green">Added</span> Boss System</li>
-            <li><span class="badge badge-green">Added</span> Enemy Ability</li>
-            <li><span class="badge badge-green">Added</span> Pickable Ammo Box</li>
-            <li><span class="badge badge-blue">Updated</span> Better Interaction System</li>
-            <li><span class="badge badge-green">Added</span> Enemy Sounds</li>
-            <li><span class="badge badge-green">Added</span> Enemy Drop Loot</li>
-            <li><span class="badge badge-green">Added</span> More Enemy Presets</li>
-            <li><span class="badge badge-blue">Updated</span> Enemy AI</li>
+            <li><span class="badge badge-green">Added</span> Gamemode System</li>
+            <li><span class="badge badge-green">Added</span> 3 New Gamemode: <code>Deadly Race</code>, <code>Wave</code>, <code>Arcade</code></li>
+            <li><span class="badge badge-green">Added</span> Score Points</li>
+            <li><span class="badge badge-yellow">Rework</span> Trophy System Rework</li>
+            <li><span class="badge badge-green">Added</span> 2 New Trophy: <code>None</code>, <code>Diamond</code></li>
+            <li><span class="badge badge-green">Added</span> Different requirements can be added to each level</li>
+            <li><span class="badge badge-green">Added</span> Help Box Attribute</li>
+            <li><span class="badge badge-green">Added</span> Gamemode UI</li>
+            <li><span class="badge badge-green">Added</span> Enemy Grave Toggle</li>
+            <li><span class="badge badge-green">Added</span> New Gamemode Map <code>Death Ring</code></li>
+            <li><span class="badge badge-purple">Integration</span> Loot Table - Universal Loot System</li>
           </ul>
 
       		  
-		  <hr class="divider">
+		  <hr class="divider">          
+      
+      <h3 id="v1-5-0a">Version 1.5.0a <small class="text-muted">05 October, 2022</small></h3>
+      <ul class="changelog">
+        <li><span class="badge badge-green">Added</span> Boss System</li>
+        <li><span class="badge badge-green">Added</span> Enemy Ability</li>
+        <li><span class="badge badge-green">Added</span> Pickable Ammo Box</li>
+        <li><span class="badge badge-blue">Updated</span> Better Interaction System</li>
+        <li><span class="badge badge-green">Added</span> Enemy Sounds</li>
+        <li><span class="badge badge-green">Added</span> Enemy Drop Loot</li>
+        <li><span class="badge badge-green">Added</span> More Enemy Presets</li>
+        <li><span class="badge badge-blue">Updated</span> Enemy AI</li>
+      </ul>
+
+        
+  <hr class="divider">
 
       <h3 id="v1-4-0c">Version 1.4.0c <small class="text-muted">01 September, 2022</small></h3>
       <ul class="changelog">
@@ -656,7 +755,7 @@
             <li><span class="badge badge-blue">Updated</span> Documentation</li>
             <li><span class="badge badge-blue">Updated</span> Locaization System: <code>Audio</code>, <code>Texture</code>, <code>Sprite</code></li>
             <li><span class="badge badge-blue">Updated</span> Save System: <code>Vector2</code>, <code>Vector3</code>, <code>Vector4</code>, <code>Color</code>, <code>Quanterion</code>, <code>Custom Class: Trophy</code></li>
-            <li><span class="badge badge-purple">Improve</span> Improve Organization</li>
+            <li><span class="badge badge-blue">Updated</span> Improve Organization</li>
           </ul>
 
       		  
