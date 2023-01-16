@@ -3040,7 +3040,11 @@ input:-internal-autofill-selected {
   background-color: #28a745;
   box-shadow: 0px 0px 8px #28a745;
 }
-
+.badge-normal {
+  color: #fff;
+background-color: #272c2e;
+  box-shadow: 0px 0px 13px #272c2e;
+}
 .badge-blue {
   color: #fff;
   background-color: #17a2b8;
