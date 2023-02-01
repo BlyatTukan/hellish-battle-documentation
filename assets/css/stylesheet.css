@@ -3126,3 +3126,7 @@ blue-txt{
 .badge{
   margin: 0 5px 0 0;
 }
+
+#tab_weapon .img-fluid{
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+}

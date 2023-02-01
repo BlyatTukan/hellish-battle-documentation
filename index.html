@@ -199,22 +199,28 @@
 									<a class="nav-link" href="#attribute_show_if">Show If Attribute</a>
 								</li>
 								<li class="nav-item">
+									<a class="nav-link" href="#attribute_hide_if">Hide If Attribute</a>
+								</li>
+								<li class="nav-item">
 									<a class="nav-link" href="#attribute_suffix">Suffix Attribute</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#attribute_helpBox">Help Box Attribute</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#attribute_hierarchy_separator">Hierarchy Separator</a>
 								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#tab_weapon">Weapons</a>
 							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
+            					<li class="nav-item"><a class="nav-link" href="#weapon_melle">Melle Weapon</a></li>
+            					<li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>
 								<li class="nav-item">
 									<a class="nav-link" href="#weapon_convert">Convert Weapon to New System</a>
 								</li>
-								<!--<li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
-            <li class="nav-item"><a class="nav-link" href="#weapon_melle">Melle Weapon</a></li>
-            <li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>-->
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -226,6 +232,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#tab_changelog">Changelog</a>
 							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="#v1-8-0a">v1.8.0a</a>
+								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#v1-7-0a">v1.7.0a</a>
 								</li>
@@ -278,7 +287,7 @@
 							<div class="row">
 								<div class="col-sm-6 col-lg-4">
 									<ul class="list-unstyled">
-										<li><strong>Version:</strong> 1.7.0a</li>
+										<li><strong>Version:</strong> 1.8.0a</li>
 										<li>
 											<strong>Author:</strong>
 											<a href="https://assetstore.unity.com/publishers/63085" target="_blank">Tiny Slime Studio</a>
@@ -291,7 +300,7 @@
 											<strong class="font-weight-700">Created:</strong>
 											22 April, 2022
 										</li>
-										<li><strong>Update:</strong> 18 January, 2023</li>
+										<li><strong>Update:</strong> 10 February, 2023</li>
 									</ul>
 								</div>
 
@@ -300,7 +309,7 @@
 										<li><strong>File Size:</strong> 72.3 MB</li>
 										<li>
 											<strong>Unity Versions:</strong>
-											2020.3.42+
+											2021.3.17+
 										</li>
 									</ul>
 								</div>
@@ -430,6 +439,10 @@
 							<ul class="changelog">
 								<li>
 									<span class="badge badge-green">Stable</span>
+									Input System
+								</li>
+								<li>
+									<span class="badge badge-green">Stable</span>
 									2D SpriteShape
 								</li>
 								<li>
@@ -497,7 +510,7 @@
 							<p>By default, Hellish Battle includes translations into 4 languages:</p>
 							<ul class="changelog">
 								<li>
-									<span class="badge badge-yellow">Manual 50%</span>
+									<span class="badge badge-yellow">Manual 75%</span>
 									English
 								</li>
 								<li>
@@ -807,6 +820,45 @@
 
 						<!-- Weapon 
 		============================ -->
+						<section id="attribute_hide_if">
+							<h2>Hide If Attribute</h2>
+							<p></p>
+							<h4>Sample Code</h4>
+							<pre style="margin: 0">
+        <span class="hljs"><comment>// Example Enum</comment>
+<red-txt>public</red-txt> <green-txt>CustomEnum Enums</green-txt>;
+
+<comment>// Example Bool</comment>
+<red-txt>public bool</red-txt> <green-txt>enable</green-txt>;
+
+<comment>// Hide If Bool</comment>
+[<green-txt>HideIf</green-txt>(<yellow-txt>"enable"</yellow-txt>)] <red-txt>public int</red-txt> <green-txt>disableWhenBool</green-txt>;
+
+<comment>// Hide if enums == CustomEnum.B</comment>
+[<green-txt>HideIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, <blue-txt>1</blue-txt>)] <red-txt>public int</red-txt> <green-txt>disableWhenEnumB</green-txt>;
+
+<comment>// Hide if enums == CustomEnum.C</comment>
+[<green-txt>HideIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, (<red-txt>int</red-txt>)<green-txt>CustomEnum</green-txt><red-txt>.</red-txt>C)] <red-txt>public int</red-txt> <green-txt>disableWhenEnumC</green-txt>;
+
+<comment>// Hide if enums == CustomEnum.D</comment>
+[<green-txt>HideIf</green-txt>(<yellow-txt>"Enums"</yellow-txt>, (<red-txt>int</red-txt>)<green-txt>CustomEnum</green-txt><red-txt>.</red-txt>D, <red-txt>false</red-txt>)] <red-txt>public int</red-txt> <green-txt>disableWhenEnumD</green-txt>;
+
+<comment>// Example Enum Code</comment>
+<red-txt>public enum</red-txt> <green-txt>CustomEnum</green-txt>
+{
+    A <red-txt>=</red-txt> <blue-txt>0</blue-txt>,
+    B <red-txt>=</red-txt> <blue-txt>1</blue-txt>,
+    C <red-txt>=</red-txt> <blue-txt>2</blue-txt>,
+    D <red-txt>=</red-txt> <blue-txt>4</blue-txt>
+}
+</span>
+      </pre>
+						</section>
+
+						<hr class="divider" />
+
+						<!-- Weapon 
+		============================ -->
 						<section id="attribute_suffix">
 							<h2>Suffix Attribute</h2>
 							<p></p>
@@ -916,6 +968,108 @@
 						<section id="tab_weapon">
 							<h2>Weapons</h2>
 							<p>At this Moment Hellish battle has 3 types of Weapons: Ranged Weapon, Melle Weapon and Throwable Weapon</p>
+
+							<h4 id="weapon_range">Range Weapon</h4>
+							<div class="row">
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Pistol_UI.png" alt="" />
+										<h6 class="pt-2">HB27</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/GrenadeLancher_UI.png" alt="" />
+										<h6 class="pt-2">RK 800</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/RocketLancher_UI.png" alt="" />
+										<h6 class="pt-2">Red Death</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Infinity_Pistol_UI.png" alt="" />
+										<h6 class="pt-2">Demon Pistol</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Rifle_UI.png" alt="" />
+										<h6 class="pt-2">HK - S28</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Burst_Gun_UI.png" alt="" />
+										<h6 class="pt-2">Python</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Sniper_UI.png" alt="" />
+										<h6 class="pt-2">Eagle Eye</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/DoubleBarrel_UI.png" alt="" />
+										<h6 class="pt-2">DX-32a</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Shotgun_UI.png" alt="" />
+										<h6 class="pt-2">Justice</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Dual_Revolver_UI.png" alt="" />
+										<h6 class="pt-2">Dual Revolver</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Charge_Gun_UI.png" alt="" />
+										<h6 class="pt-2">Ka-Boom 3000</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Laser_Gun_UI.png" alt="" />
+										<h6 class="pt-2">B.O.B.</h6>
+									</a>
+								</div>
+							</div>
+							
+							<h4 id="weapon_melle">Melle Weapon</h4>
+							<div class="row">
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Axe_UI.png" alt="" />
+										<h6 class="pt-2">Axe</h6>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/HuntingKnife_UI.png" alt="" />
+										<h6 class="pt-2">Hunting Knife</h6>
+									</a>
+								</div>
+							</div>
+							
+							<h4 id="weapon_throwable">Throwable Weapon</h4>
+							<div class="row">
+								<div class="col-4 my-3 text-center">
+									<a>
+										<img class="img-fluid border" src="/assets/images/_weapon/Hand_Grenade_UI.png" alt="" />
+										<h6 class="pt-2">Grenate</h6>
+									</a>
+								</div>
+							</div>
 						</section>
 
 						<hr class="divider" />
@@ -1005,6 +1159,72 @@
 								Do you want to check what will be in the next update? check it out for the always up-to-date roadmap:
 								<a target="_blank" href="https://trello.com/b/LLsG1tUJ/hellish-battle-25d-retro-fps-game-template">Trello</a>
 							</p>
+
+							<h3 id="v1-8-0a">
+								Version 1.8.0a
+								<small class="text-muted">07 February, 2023</small>
+							</h3>
+							<ul class="changelog">
+								<li>
+									<span class="badge badge-orange">Migrate</span>
+									Migrate to Unity 2021.3f17
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Convert to New Input System
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Key Binding
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Controller Support (DualShock, DualSense, Xbox Controller etc.)
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									New Weapon Shot: Laser
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									New Weapon Shot: Charge
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Dual Wielding Gun
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									3 New Pre-Build Weapon (Dual Revolver, Laser Gun, Charge Rocket Lancher)
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									HideIf Attribute
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									New Localization Property
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Hierarchy Separator
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Requirement Package Window
+								</li>
+								<li>
+									<span class="badge badge-purple">Integration</span>
+									Update Loot Table to 1.1.0a
+								</li>
+								<li>
+									<span class="badge badge-red">Fix</span>
+									Fix Mobile Controller
+								</li>
+							</ul>
+
+							<hr class="divider" />
+
 
 							<h3 id="v1-7-0a">
 								Version 1.7.0a
@@ -1227,7 +1447,7 @@
 									<code>Show If "Bool or Enum" Attribute</code>
 								</li>
 								<li>
-									<span class="badge badge-orange">Tutorial</span>
+									<span class="badge badge-green">Added</span>
 									Save System: <code>Vector2</code>, <code>Vector3</code>, <code>Vector4</code>, <code>Color</code>, <code>Quanterion</code>,
 									<code>Custom Class: Trophy</code>
 								</li>
