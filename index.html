@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="print">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -69,7 +69,7 @@
 									<a target="_blank" href="https://assetstore.unity.com/publishers/63085">Assets Store</a>
 								</li>
 								<li>
-									<a target="_blank" href="https://blyattukan.github.io/TinySlimeStudio/">Tiny Slime Studio Website</a>
+									<a target="_blank" href="https://blyattukan.github.io/TinySlimeStudio/">Website</a>
 								</li>
 							</ul>
 						</div>
@@ -179,17 +179,6 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#tab_cheats">Cheats</a>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link" href="#cheats_console">Cheat Console</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#cheats_fly">Fly Cheats</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="#tab_attribute">Attribute</a>
 							<ul class="nav flex-column">
 								<li class="nav-item">
@@ -213,14 +202,29 @@
 							</ul>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#tab_cheats">Cheats</a>
+							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="#cheats_console">Cheat Console</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#cheats_fly">Fly Cheats</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tab_inventory">Inventory</a>
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="#inventory_start">Start Weapon</a></li>
+								<li class="nav-item"><a class="nav-link" href="#inventory_slot">Slot Settings</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#tab_weapon">Weapons</a>
 							<ul class="nav flex-column">
 								<li class="nav-item"><a class="nav-link" href="#weapon_range">Range Weapon</a></li>
             					<li class="nav-item"><a class="nav-link" href="#weapon_melle">Melle Weapon</a></li>
             					<li class="nav-item"><a class="nav-link" href="#weapon_throwable">Throwable Weapon</a></li>
-								<li class="nav-item">
-									<a class="nav-link" href="#weapon_convert">Convert Weapon to New System</a>
-								</li>
 							</ul>
 						</li>
 						<li class="nav-item">
@@ -242,6 +246,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#tab_changelog">Changelog</a>
 							<ul class="nav flex-column">
+								<li class="nav-item">
+									<a class="nav-link" href="#v2-0-0a">v2.0.0a</a>
+								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#v1-10-0a">v1.10.0a</a>
 								</li>
@@ -297,13 +304,15 @@
 		============================ -->
 						<section id="tab_installation">
 							<h1>Documentation</h1>
-							<h2>Hellish Battle - 2.5D Retro FPS</h2>
+							<h2>Hellish Battle - 2.5D Retro FPS</h2>								<a class="popup-img" href="assets/images/Cover.png"
+									><img class="img-fluid border" src="assets/images/Cover.png" alt=""
+								/></a>
 							<!--<a class="btn btn-primary" href="https://blyattukan.github.io/hellish-battle-documentation/"><i class="fas fa-external-link-alt mr-1"></i> Online Documentation</a>-->
 							<hr />
 							<div class="row">
 								<div class="col-sm-6 col-lg-4">
 									<ul class="list-unstyled">
-										<li><strong>Version:</strong> 1.10.0a</li>
+										<li><strong>Version:</strong> 2.0.0a</li>
 										<li>
 											<strong>Author:</strong>
 											<a href="https://assetstore.unity.com/publishers/63085" target="_blank">Tiny Slime Studio</a>
@@ -316,13 +325,13 @@
 											<strong class="font-weight-700">Created:</strong>
 											22 April, 2022
 										</li>
-										<li><strong>Update:</strong> 07 April, 2023</li>
+										<li><strong>Update:</strong> 07 July, 2023</li>
 									</ul>
 								</div>
 
 								<div class="col-sm-6 col-lg-4">
 									<ul class="list-unstyled">
-										<li><strong>File Size:</strong> 82.2 MB</li>
+										<li><strong>File Size:</strong> 85.4 MB</li>
 										<li>
 											<strong>Unity Versions:</strong>
 											2021.3.17+
@@ -331,8 +340,13 @@
 								</div>
 							</div>
 						</section>
-
+							<div class="alert alert-info">
+								<span class="badge badge-red text-uppercase">Note:</span>
+								In the 2.0.0a update Story Mode is coming out as a partial test, the record will only include health, armor, level and trophy status, the other features will appear in 2.0.1a
+							</div>
 						<hr class="divider" />
+
+						
 
 						<!-- Getting Started
 		============================ -->
@@ -482,6 +496,9 @@
 									ProGrids
 								</li>
 							</ul>
+<h3>Tutorials</h3>
+							<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/cmOPhw6-mxI"> </iframe>
+							<br><br><iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/ESUZVumYSUg"> </iframe>
 						</section>
 
 						<hr class="divider" />
@@ -619,6 +636,10 @@
 									<span class="badge badge-red">Custom</span>
 									Trophy
 								</li>
+								<li>
+									<span class="badge badge-red">Custom</span>
+									Player Save
+								</li>
 							</ul>
 						</section>
 
@@ -668,11 +689,26 @@
 
 						<hr class="divider" />
 
+							<section id="savesystem_editor">
+							<h2>Tiny Save Editor</h2>
+							<p>
+								<a class="popup-img" href="assets/images/save/base.png">
+									<img class="img-fluid border" src="assets/images/save/base.png" alt=""
+								/></a>
+
+								Allows you to view existing records, control their changes and delete specific records
+							</p>
+							
+						</section>
+
+						<hr class="divider" />
+
 						<!-- Layout
 		============================ -->
 						<section id="tab_chapter">
 							<h2>Chapter Manager</h2>
-
+<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/Is9VjhIXY2A"> </iframe>
+<br><br>
 							<p>
 								<a class="popup-img" href="assets/images/chapter/base.png">
 									<img class="img-fluid border" src="assets/images/chapter/base.png" alt=""
@@ -921,6 +957,8 @@
 								============================ -->
 						<section id="tab_cheats">
 							<h2>Cheats</h2>
+							<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/zeIgPy5n6SE"> </iframe>
+							<br><br>
 							<p>With Cheats you can test new features, they make your life easier</p>
 						</section>
 
@@ -929,7 +967,7 @@
 						<section id="tab_cheats">
 							<h2>Cheat Console</h2>
 							<p>To open the console you need to press F9 (Default Settings)</p>
-							<ul class="changelog">
+							<ul class="changelog long-badge">
 								<li>
 									<span class="badge badge-normal">kill_enemy</span>
 									- Kill all Enemy on Level
@@ -945,6 +983,10 @@
 								<li>
 									<span class="badge badge-normal">max_ammo</span>
 									- Gives the player the maximum amount of Ammo
+								</li>
+								<li>
+									<span class="badge badge-normal">spawn_all_weapon</span>
+									- Spawn All Avaiable Weapon
 								</li>
 								<li>
 									<span class="badge badge-normal">set_health</span>
@@ -978,6 +1020,42 @@
 						</section>
 
 						<hr class="divider" />
+
+						<section id="tab_inventory">
+							<h2>Inventory</h2>
+							<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/ObCPD7iQ__Q"> </iframe>
+							<br><br>
+							<div class="alert alert-info">
+								<span class="badge badge-red text-uppercase">Note:</span>
+								In update 2.0.1 there will be an option to select the old inventory type
+							</div>
+<br>
+							<p>
+								As of the 2.0.0 update, a new inventory system is available, allowing for dynamic inventory management and better customisation for each player's needs
+							</p>
+						</section>
+
+						<hr class="divider" />
+
+						<section id="inventory_start">
+							<h2>Start Weapon Settings</h2>
+							<p>
+								In order to change the initial weapon in the scene, you need to find the <code>Level Manager</code> element in which the LevelManager.cs script contains the fields responsible for the player's initial weapon.
+							</p>
+						</section>
+
+						<hr class="divider" />
+
+
+						<section id="inventory_slot">
+							<h2>Category Slot</h2>
+							<p>
+The number of available slots can be changed under <code>Project Settings -> Hellish battle -> Asset Settings</code> in the <code>Inventory Slot Count</code> tab.
+							</p>
+						</section>
+
+						<hr class="divider" />
+
 
 						<!-- Weapon 
 		============================ -->
@@ -1089,21 +1167,12 @@
 						</section>
 						
 						<hr class="divider" />
-
-						<!-- Weapon 
-		============================ -->
-						<section id="weapon_convert">
-							<h2>Convert to New System</h2>
-							<p>Only when upgrading from 1.3.0 and earlier</p>
-							<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://youtube.com/embed/RkGpeNXYHgc"> </iframe>
-						</section>
-
-						<hr class="divider" />
-
 												<!-- Weapon 
 		============================ -->
 						<section id="tab_ability">
 							<h2>Ability</h2>
+							<iframe width="100%" height="100%" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/XugtMDd5wz8"> </iframe>
+							<br><br>
 							<p>At this Moment Hellish battle has 3 types of Weapons: Ranged Weapon, Melle Weapon and Throwable Weapon</p>
 
 							<h4 id="ability_main">Ability</h4>
@@ -1118,21 +1187,21 @@
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Ability_Self_Explosion.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Seismic Blast<br><span class="badge badge-blue">Cost: 20 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Seismic Blast<br><span class="badge badge-blue">Cost: 50 Points</span></h6>
 										<p>Seismic Blast deals a lot of damage to nearby enemies</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Ability_Instant_Armor.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Life Injection<br><span class="badge badge-blue">Cost: 10 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Life Injection<br><span class="badge badge-blue">Cost: 25 Points</span></h6>
 										<p>The player immediately gets an injection of extra health</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Ability_Instant_Healt.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Armor Injection<br><span class="badge badge-blue">Cost: 10 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Armor Injection<br><span class="badge badge-blue">Cost: 25 Points</span></h6>
 										<p>The player immediately gets a shot of extra armor</p>
 									</a>
 								</div>
@@ -1157,42 +1226,42 @@
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Health_Regeneration.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Willing to live<br><span class="badge badge-blue">Cost: 10 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Willing to live<br><span class="badge badge-blue">Cost: 25 Points</span></h6>
 										<p>After a while without receiving damage, the player regains health</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Armor_Regeneration.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Auto Repair Armor<br><span class="badge badge-blue">Cost: 10 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Auto Repair Armor<br><span class="badge badge-blue">Cost: 25 Points</span></h6>
 										<p>After a while without receiving damage, the player regains armor</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Regeneration.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Regeneration<br><span class="badge badge-blue">Cost: 15 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Regeneration<br><span class="badge badge-blue">Cost: 40 Points</span></h6>
 										<p>After a while without receiving damage, the player slowly regains health and armor</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Speed_Boost.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Hermes sandals<br><span class="badge badge-blue">Cost: 5 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Hermes sandals<br><span class="badge badge-blue">Cost: 15 Points</span></h6>
 										<p>Player has increased speed</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Weapon_Boost.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Training Makes the Champion<br><span class="badge badge-blue">Cost: 10 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Training Makes the Champion<br><span class="badge badge-blue">Cost: 25 Points</span></h6>
 										<p>The player is a master of the Weapon and can make better use of it</p>
 									</a>
 								</div>
 								<div class="col-4 my-3 text-center">
 									<a>
 										<img class="img-fluid border" src="assets/images/ability/Passive_Varmirism.png" alt="" />
-										<h6 class="pt-2" style="margin-bottom: 0">Vampirism<br><span class="badge badge-blue">Cost: 15 Points</span></h6>
+										<h6 class="pt-2" style="margin-bottom: 0">Vampirism<br><span class="badge badge-blue">Cost: 40 Points</span></h6>
 										<p>Player recovers some of the damage inflicted</p>
 									</a>
 								</div>
@@ -1236,27 +1305,63 @@
 							<div class="row">
 								<div class="col-4 my-3 text-center">
 									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_Inventory.png" alt="" />
+										<h6 class="pt-2">Customize Inventory<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/ObCPD7iQ__Q"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_level.png" alt="" />
+										<h6 class="pt-2">Add New Level<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/Is9VjhIXY2A"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_Commands.png" alt="" />
+										<h6 class="pt-2">Add New Commands<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/zeIgPy5n6SE"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_ability.png" alt="" />
+										<h6 class="pt-2">Add New Passive and Ability<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/XugtMDd5wz8"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_Post_Input.png" alt="" />
+										<h6 class="pt-2">Install New Input System & Post Processing<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/cmOPhw6-mxI"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
+										><img class="img-fluid border" src="assets/images/tutorials/Tuto_Progrids_Probuilder.png" alt="" />
+										<h6 class="pt-2">Install ProGrids & Pro Builder<br /></h6>
+										<a class="btn btn-primary" target="_blank" href="https://youtu.be/ESUZVumYSUg"
+											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
+										>
+									</a>
+								</div>
+								<div class="col-4 my-3 text-center">
+									<a target="_blank" href="https://youtu.be/RBc4tkIjYmE"
 										><img class="img-fluid border" src="assets/images/tutorials/ChangeEnemyTutorial.png" alt="" />
 										<h6 class="pt-2">Change Enemy Animation<br /></h6>
 										<a class="btn btn-primary" target="_blank" href="https://youtu.be/RBc4tkIjYmE"
-											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
-										>
-									</a>
-								</div>
-								<div class="col-4 my-3 text-center">
-									<a target="_blank" href="https://youtu.be/RkGpeNXYHgc"
-										><img class="img-fluid border" src="assets/images/tutorials/ConvertWeapon.png" alt="" />
-										<h6 class="pt-2">Convert Weapon to New System<br /></h6>
-										<a class="btn btn-primary" target="_blank" href="https://youtu.be/RkGpeNXYHgc"
-											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
-										>
-									</a>
-								</div>
-								<div class="col-4 my-3 text-center">
-									<a target="_blank" href="https://youtu.be/-FB5Zmv00fc"
-										><img class="img-fluid border" src="assets/images/tutorials/CreateNewWeapon.png" alt="" />
-										<h6 class="pt-2">Create New Weapon<br /></h6>
-										<a class="btn btn-primary" target="_blank" href="https://youtu.be/-FB5Zmv00fc"
 											><i class="fas fa-external-link-alt mr-1"></i> Watch Tutorial</a
 										>
 									</a>
@@ -1323,6 +1428,77 @@
 								Do you want to check what will be in the next update? check it out for the always up-to-date roadmap:
 								<a target="_blank" href="https://trello.com/b/LLsG1tUJ/hellish-battle-25d-retro-fps-game-template">Trello</a>
 							</p>
+
+							<h3 id="v2-0-0a">
+								Version 2.0.0a
+								<small class="text-muted">07 July, 2023</small>
+							</h3>							
+							<ul class="changelog">
+								<li>
+									<span class="badge badge-green">Added</span>
+									Story Mode System
+									</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Player Save Progress
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Weapon Type Class
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Start Weapon Pool
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Player Face Animation
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									4 New Maps
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Flash Enemy when Take Damage
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Over 100 New Textures
+								</li>
+								<li>
+									<span class="badge badge-green">Added</span>
+									Feedback Report System
+								</li>
+								<li>
+									<span class="badge badge-blue">Updated</span>
+									Pick-Up System
+								</li>
+								<li>
+									<span class="badge badge-blue">Updated</span>
+									New User Interface
+								</li>
+								<li>
+									<span class="badge badge-blue">Updated</span>
+									Improve Old Maps
+								</li>
+								<li>
+									<span class="badge badge-blue">Updated</span>
+									Improve Over 35 Scripts
+								</li>
+								<li>
+									<span class="badge badge-yellow">Rework</span>
+									Inventory System
+								</li>
+								<li>
+									<span class="badge badge-yellow">Rework</span>
+									Rework Settings Manager
+								</li>
+								<li>
+									<span class="badge badge-yellow">Rework</span>
+									Rework 5 Scripts
+								</li>
+							</ul>
 
 							<h3 id="v1-10-0a">
 								Version 1.10.0a

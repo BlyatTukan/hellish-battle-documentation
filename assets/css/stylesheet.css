@@ -35,13 +35,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* =================================== */
 /*  1. Basic Style 
 /* =================================== */
 
 * {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Prompt', sans-serif;
+
+}
+
+.print .idocs-navigation {
+  display: none;
+}
+
+.print .idocs-content {
+  margin-left: 0;
+
 }
 
 /* width */
@@ -359,6 +371,7 @@ blockquote,
 .text-6 {
   font-size: 24px !important;
   font-size: 1.50rem !important;
+  font-weight: 700;
 }
 
 .text-7 {
@@ -1014,6 +1027,7 @@ hr {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 500;
 }
 
 .primary-menu ul.navbar-nav > li > a:not(.btn) {
@@ -2066,6 +2080,10 @@ hr {
   margin-right: 10px;
   border-radius: .20rem;
   text-transform: uppercase;
+}
+
+.long-badge .badge {
+  width: 160px;
 }
 
 .changelog li {
@@ -3281,6 +3299,12 @@ button.bg-primary:hover {
 .btn-primary {
   background-color: #4ca274;
   border-color: #4ca274;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: #14a055 !important;
+  border-color: #14a055 !important;
 }
 
 .btn-primary:hover {
@@ -3652,4 +3676,9 @@ blue-txt {
 .img-fluid {
   border-radius: 12px;
   box-shadow: 2px 2px 8px #00000055;
+}
+
+small {
+  font-size: 0.8rem;
+  margin-left: 6px;
 }
