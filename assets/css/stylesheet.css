@@ -2086,6 +2086,10 @@ hr {
   width: 160px;
 }
 
+.long-badge .new-line {
+  margin-left: 170px;
+}
+
 .changelog li {
   line-height: 1.8;
 }
@@ -3681,4 +3685,8 @@ blue-txt {
 small {
   font-size: 0.8rem;
   margin-left: 6px;
+}
+
+.nav-link .badge {
+  margin: 5px 10px;
 }
